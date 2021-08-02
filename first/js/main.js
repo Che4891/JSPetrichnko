@@ -39,7 +39,8 @@ console.log(obj.isMariad);
 //console.log(result);
 
 //вопрос -ответ
-// const answer = prompt('how old are you?'); // возможность написать ответ (возвращаеться всегда тип-строка) если добавить перед prompt + то тип меняеться
+// const answer = prompt('how old are you?'); // возможность написать ответ (возвращаеться всегда тип-строка) 
+// если добавить перед prompt + то тип меняеться
 // console.log(typeof(answer));
 
 
