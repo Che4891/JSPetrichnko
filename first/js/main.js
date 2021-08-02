@@ -75,3 +75,28 @@ let incr = 10,
 
 	console.log(incr);
 	console.log(decr);
+
+	//ПРАКТИЧЕСКОЕ ЗАДАНИЕ
+
+	const numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+	console.log(numderOfFilms);
+
+	const personalMovieDB = {
+		count: numderOfFilms,
+		movies: {},
+		actors: {},
+		genres: [],
+		privat: false
+	}; 
+
+
+	const a = prompt('Один из последних просмотренніх фильмов?');
+	const b = prompt('На сколько вы их оцените?');
+
+	const d = prompt('Один из последних просмотренніх фильмов?');
+	const c = prompt('На сколько вы их оцените?');
+	
+	personalMovieDB.movies[a] = b; 
+	personalMovieDB.movies[d] = c; 
+
+	console.log(personalMovieDB);
