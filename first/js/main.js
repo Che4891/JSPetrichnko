@@ -177,3 +177,79 @@ for (let i = 1; i < 10; i++) {
 	}
 	console.log(i);
 }
+// практическое занятие 2 
+// 	const numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+// 	console.log(numderOfFilms);
+
+// 	const personalMovieDB = {
+// 		count: numderOfFilms,
+// 		movies: {},
+// }; 
+
+
+
+// for (let i = 0; i < 2; i++) {
+// 	const a = prompt('Один из последних просмотренніх фильмов?');
+// 	const b = prompt('На сколько вы их оцените?');
+
+// 	if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+// 		personalMovieDB.movies[a] = b; 
+// 		console.log('Done');
+// 	} else {
+// 		console.log('error');
+// 		i--;
+// 	}
+// }
+// if (personalMovieDB.count < 10) {
+// 	console.log('мало фильмов');
+// } else if ( personalMovieDB.count > 10 && personalMovieDB.count < 30 ) {
+// 	console.log('Нормально');
+// } else {
+// 	console.log('бездельник. только и смотриш фильмы');
+// }
+
+// ФУНКЦИИ
+
+//обычная функция без переменных
+function sendFirstMassege(text) {
+	console.log(text);
+}
+sendFirstMassege('Hello');
+
+
+//функция с локальной переменной, которая работает только в нутри
+function sendFirstMassege(text) {
+	console.log(text);
+
+	let nums = 10;
+	console.log(nums);
+}
+sendFirstMassege('Hello');
+
+
+//функция с глобальной переменной, которая вызываеться с наружи и потом переопределяеться в нутри
+
+
+let numds = 10;
+
+function sendFirstsMassege(text) {
+	
+	console.log(text);
+     numds = 20;
+}
+sendFirstsMassege('Hello');
+
+console.log(numds);
+// rutern это вывод значения он же заканчивает работу функции
+function calc(a, b) {
+	return (a + b);
+}
+console.log(calc(4, 5));
+console.log(calc(10, 10));
+
+
+//стрелочная функция
+const calkd = (a, b) => {
+	return (a + b);
+}
+console.log(calkd(1, 5));
