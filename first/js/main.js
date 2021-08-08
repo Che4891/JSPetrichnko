@@ -253,3 +253,34 @@ const calkd = (a, b) => {
 	return (a + b);
 }
 console.log(calkd(1, 5));
+
+// Методы и свойства
+//свойство
+let myString = "strin";
+let arre = [1, 2, 3]
+
+console.log(myString.length); // свойство которое проверяет количество (тут букв в троке)
+console.log(arre.length); // тут количество елементов в нутри массива
+
+//Метод
+
+console.log(myString.toUpperCase()); // метод для больших букв
+
+let cdf = myString.toUpperCase();
+console.log(cdf.toLowerCase()); // метод для маленьких букв
+
+const frut = "Sory this is my frut";
+console.log(frut.indexOf('my'));  // показывает под каким номером начинаеться этот кусо текста
+
+
+const logg = 'Hello world';
+console.log(logg.slice(0, 6)); // выводи кусок кода который я вырезаю с помощью номеров елементов, если указать только первый номер то строка будет вырезана до конца
+
+const numderrr = 12.2;
+console.log(Math.round(numderrr)); // Math применяеться к числам (перевод математика) .round - округление до ближайшего целого числа 
+
+
+const tests =  "19.9px";
+console.log(parseInt(tests)); // переводит строку в целое число (вообщше метод для превращения числа я другую систему исчисления но можно спользовать и  так)
+
+console.log(parseFloat(tests)); // работает как и предідущий но возвращает значение уже с точкой
