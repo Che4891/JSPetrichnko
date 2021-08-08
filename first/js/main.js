@@ -284,3 +284,64 @@ const tests =  "19.9px";
 console.log(parseInt(tests)); // переводит строку в целое число (вообщше метод для превращения числа я другую систему исчисления но можно спользовать и  так)
 
 console.log(parseFloat(tests)); // работает как и предідущий но возвращает значение уже с точкой
+
+
+// Третье практическое задание
+
+let numderOfFilms;
+
+function start () {
+	numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+	while (numderOfFilms == '' || numderOfFilms == null || isNaN(numderOfFilms)) {
+		numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+	}
+}
+start();
+const personalMovieDB = {
+			count: numderOfFilms,
+			movies: {},
+			ganrl: {},
+			privat: false
+	 }; 
+
+function rememberMyfilms() {
+	for (let i = 0; i < 2; i++) {
+			const a = prompt('Один из последних просмотренніх фильмов?');
+			const b = prompt('На сколько вы их оцените?');
+		
+			if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+				personalMovieDB.movies[a] = b; 
+				console.log('Done');
+			} else {
+				console.log('error');
+				i--;
+			}
+		}
+}
+// rememberMyfilms();
+
+function detectPersonalLevel() {
+	if (personalMovieDB.count < 10) {
+			console.log('мало фильмов');
+		 } else if ( personalMovieDB.count > 10 && personalMovieDB.count < 30 ) {
+			console.log('Нормально');
+		} else {
+			console.log('бездельник. только и смотриш фильмы');
+	 }
+}
+// detectPersonalLevel ();
+
+function showMybm (hidden){
+	if (!hidden) {
+		console.log(personalMovieDB);
+	}
+}
+
+showMybm(personalMovieDB.privat);
+
+function writeyourGaners() {
+	for (let i = 1; i <= 3; i++){
+		personalMovieDB.ganrl[i -1] = prompt (`Ваш любтимый жанр под номером ${i}`);	
+	}
+}
+writeyourGaners ();
