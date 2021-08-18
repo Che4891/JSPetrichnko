@@ -345,3 +345,15 @@ function writeyourGaners() {
 	}
 }
 writeyourGaners ();
+
+// Колбек функция- там где все действия выполняються строго по порядку / пример такой функции
+
+function learnJs(lang, callback) {
+	console.log(`Я учу;${lang}`);
+	callback();
+}
+function done() {
+	console.log('Я прошел этот урок');
+}
+
+learnJs('JsvaScript', done)
