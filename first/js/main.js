@@ -288,63 +288,63 @@ console.log(parseFloat(tests)); // работает как и предідущи
 
 // Третье практическое задание
 
-let numderOfFilms;
+// let numderOfFilms;
 
-function start () {
-	numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
-	while (numderOfFilms == '' || numderOfFilms == null || isNaN(numderOfFilms)) {
-		numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
-	}
-}
-start();
-const personalMovieDB = {
-			count: numderOfFilms,
-			movies: {},
-			ganrl: {},
-			privat: false
-	 }; 
+// function start () {
+// 	numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+// 	while (numderOfFilms == '' || numderOfFilms == null || isNaN(numderOfFilms)) {
+// 		numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+// 	}
+// }
+// start();
+// const personalMovieDB = {
+// 			count: numderOfFilms,
+// 			movies: {},
+// 			ganrl: {},
+// 			privat: false
+// 	 }; 
 
-function rememberMyfilms() {
-	for (let i = 0; i < 2; i++) {
-			const a = prompt('Один из последних просмотренніх фильмов?');
-			const b = prompt('На сколько вы их оцените?');
+// function rememberMyfilms() {
+// 	for (let i = 0; i < 2; i++) {
+// 			const a = prompt('Один из последних просмотренніх фильмов?');
+// 			const b = prompt('На сколько вы их оцените?');
 		
-			if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-				personalMovieDB.movies[a] = b; 
-				console.log('Done');
-			} else {
-				console.log('error');
-				i--;
-			}
-		}
-}
-// rememberMyfilms();
+// 			if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+// 				personalMovieDB.movies[a] = b; 
+// 				console.log('Done');
+// 			} else {
+// 				console.log('error');
+// 				i--;
+// 			}
+// 		}
+// }
+// // rememberMyfilms();
 
-function detectPersonalLevel() {
-	if (personalMovieDB.count < 10) {
-			console.log('мало фильмов');
-		 } else if ( personalMovieDB.count > 10 && personalMovieDB.count < 30 ) {
-			console.log('Нормально');
-		} else {
-			console.log('бездельник. только и смотриш фильмы');
-	 }
-}
-// detectPersonalLevel ();
+// function detectPersonalLevel() {
+// 	if (personalMovieDB.count < 10) {
+// 			console.log('мало фильмов');
+// 		 } else if ( personalMovieDB.count > 10 && personalMovieDB.count < 30 ) {
+// 			console.log('Нормально');
+// 		} else {
+// 			console.log('бездельник. только и смотриш фильмы');
+// 	 }
+// }
+// // detectPersonalLevel ();
 
-function showMybm (hidden){
-	if (!hidden) {
-		console.log(personalMovieDB);
-	}
-}
+// function showMybm (hidden){
+// 	if (!hidden) {
+// 		console.log(personalMovieDB);
+// 	}
+// }
 
-showMybm(personalMovieDB.privat);
+// showMybm(personalMovieDB.privat);
 
-function writeyourGaners() {
-	for (let i = 1; i <= 3; i++){
-		personalMovieDB.ganrl[i -1] = prompt (`Ваш любтимый жанр под номером ${i}`);	
-	}
-}
-writeyourGaners ();
+// function writeyourGaners() {
+// 	for (let i = 1; i <= 3; i++){
+// 		personalMovieDB.ganrl[i -1] = prompt (`Ваш любтимый жанр под номером ${i}`);	
+// 	}
+// }
+// writeyourGaners ();
 
 // Колбек функция- там где все действия выполняються строго по порядку / пример такой функции
 
@@ -356,4 +356,57 @@ function done() {
 	console.log('Я прошел этот урок');
 }
 
-learnJs('JsvaScript', done)
+learnJs('JsvaScript', done);
+
+const options = {
+	name: "test",
+	widht: '1024',
+	height: '1024',
+	colors: {
+		border: "black",
+		bg:'red',
+	}
+}
+
+console.log(options.name);
+
+delete options.widht; // удалить елемент из обекта
+
+console.log(options);
+//вариант где обект внутри показон как строка
+// for (let key in options) {
+// 	console.log(`свойства ${key} значение ${options[key]}`);
+// }
+
+//вариант где обект внутри перебираеться
+for (let key in options) {
+	if (typeof (options[key]) === "object") {
+		for ( let i in options[key]) {
+			console.log(`Свойство ${i} значение ${options[key][i]}`);
+		}
+	}
+	else {
+		console.log(`свойства ${key} значение ${options[key]}`);
+	}
+	
+}
+
+//проверка массива на количество елементов keys
+const myObject = {
+	name: "anton",
+	secondName: 'izotov',
+	age: 36,
+	long: 198,
+}
+console.log(Object.keys(myObject).length);
+
+//массив с методом внутри (с помощью функции он умеет что-то делать)
+const newObject = {
+	name: "anton",
+	secondName: 'izotov',
+	age: 36,
+	long: 198,
+	makeTest: function (){
+		console.log('Test');
+	},
+};
