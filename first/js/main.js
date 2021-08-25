@@ -410,3 +410,42 @@ const newObject = {
 		console.log('Test');
 	},
 };
+
+ //РАБОТА С МАССИВАМИ
+
+ const arrow = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+
+ console.log(arrow);
+
+ arrow.pop(10); //удаление последнего елемента массива
+ console.log(arrow);
+
+ arrow.push(11); //добавляет елемент в конец
+ console.log(arrow);
+
+
+ //перебор массива с помощью обычного цикла
+ for (let i = 0; i < arrow.length; i++) {
+	 const element = arrow[i];
+	 console.log(element);
+ }
+
+ //переюор массива с помощью специального метода forEach()
+ arrow.forEach(function(item, i, arrow){
+	console.log(`${i}: ${item} внутри массива ${arrow}`);
+ });
+
+
+ //метод split для перебора большой строки и вередачу данных  в массив
+ const newArrow = prompt('','');
+ const products = newArrow.split(',');
+ console.log(products);
+
+ //метод join для того чтоб переделать массив в большую строку
+
+ console.log(products.join('; '));
+
+
+
+
+
