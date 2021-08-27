@@ -437,15 +437,79 @@ const newObject = {
 
 
  //метод split для перебора большой строки и вередачу данных  в массив
- const newArrow = prompt('','');
- const products = newArrow.split(',');
- console.log(products);
+//  const newArrow = prompt('','');
+//  const products = newArrow.split(',');
+//  console.log(products);
 
  //метод join для того чтоб переделать массив в большую строку
 
- console.log(products.join('; '));
+//  console.log(products.join('; '));
 
 
 
+// четвертое практическое задание - переписание третьего 
 
+
+const personalMovieDB = {
+			count: 0,
+			movies: {},
+			ganrl: {},
+			privat: false,
+			start: function () {
+				personalMovieDB.count = +prompt('Как много фильмов вы посмотрели?, "');
+				while (personalMovieDB.count  == '' || personalMovieDB.count  == null || isNaN(personalMovieDB.count )) {
+					personalMovieDB.count  = +prompt('Как много фильмов вы посмотрели?, "');
+				}
+			},
+			rememberMyfilms: function() {
+				for (let i = 0; i < 2; i++) {
+						const a = prompt('Один из последних просмотренніх фильмов?');
+						const b = prompt('На сколько вы их оцените?');
+					
+						if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+							personalMovieDB.movies[a] = b; 
+							console.log('Done');
+						} else {
+							console.log('error');
+							i--;
+						}
+					}
+			},
+			detectPersonalLevel: function() {
+				if (personalMovieDB.count < 10) {
+						console.log('мало фильмов');
+					 } else if ( personalMovieDB.count > 10 && personalMovieDB.count < 30 ) {
+						console.log('Нормально');
+					} else {
+						console.log('бездельник. только и смотриш фильмы');
+				 }
+			},
+			showMybm: function (hidden){
+				if (!hidden) {
+					console.log(personalMovieDB);
+				}
+			},
+			toggleVisibleMyDB: function () {
+				if (personalMovieDB.privat) {
+					personalMovieDB.privat == false;
+				} else {
+					personalMovieDB.privat == true;
+				}
+			},
+			writeyourGaners: function() {
+				for (let i = 1; i <= 3; i++){
+					let genre = prompt (`Ваш любтимый жанр под номером ${i}`);
+					if (genre === '' || genre === null) {
+						console.log('некоректные данные или их нет');
+						i--;
+					}
+					else {
+						personalMovieDB.ganrl[i -1] = genre;
+					}
+				}
+				persnalMovieDB.ganrl.forEach(function (item, i,) {
+					console.log(`Любимый жанр ${i} - это ${item}.`);
+				});
+			}
+	 }; 
 
