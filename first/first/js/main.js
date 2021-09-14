@@ -513,3 +513,33 @@ const personalMovieDB = {
 			}
 	 }; 
 
+	 // переопределение типов данных
+
+	 //в строку (класический)
+	 console.log(typeof(String(55)));
+	 //конкатинация в строку
+	 console.log(typeof(5 + " "));
+
+	 //в число
+	 //1)
+	 console.log(typeof(Number('5')));
+	 //2)
+	 console.log(typeof(+'5'));
+	 //3)
+	 console.log(typeof(parseInt("15px", 10)));
+
+	 //в boolean
+ let switcher = null;
+ 
+ if (switcher) {
+	 console.log("Working....");
+ }
+ switcher = 1;
+ if (switcher) {
+	console.log("Working....");
+}
+	//2) 
+	console.log(typeof(Boolean('4')));
+
+	//3) 
+	console.log(typeof(!!"4444"));
