@@ -6,7 +6,7 @@ let number = 4;
 number = 4.5;
 
 // пример infinity 
-console.log(4/0); // при деление на 0 
+console.log(4 / 0); // при деление на 0 
 
 //NaN not a number
 console.log('string' * 4); //строку множу на число и получаю инфу что это не чесло
@@ -25,13 +25,13 @@ const obj = {
 console.log(obj.isMariad);
 
 //массив он так же являеться обектом 
- const arr = ['blue', 'black', 'red', 'green'];
+const arr = ['blue', 'black', 'red', 'green'];
 
- console.log(arr[2]);
+console.log(arr[2]);
 
- // типы данных end
+// типы данных end
 
- //вывод инфы
+//вывод инфы
 //  alert('hello'); 
 
 //вопрос(да -нет
@@ -65,104 +65,104 @@ console.log(`https://www.udemy.com/${category}`);
 let incr = 10,
 	decr = 10;
 
-	// постфиксная форма записи
-	incr++;
-	decr--;
+// постфиксная форма записи
+incr++;
+decr--;
 
-	//префикстная
-	++incr;
-	--decr;
+//префикстная
+++incr;
+--decr;
 
-	console.log(incr);
-	console.log(decr);
+console.log(incr);
+console.log(decr);
 
-	//ПРАКТИЧЕСКОЕ ЗАДАНИЕ
+//ПРАКТИЧЕСКОЕ ЗАДАНИЕ
 
-	// const numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
-	// console.log(numderOfFilms);
+// const numderOfFilms = +prompt('Как много фильмов вы посмотрели?, "');
+// console.log(numderOfFilms);
 
-	// const personalMovieDB = {
-	// 	count: numderOfFilms,
-	// 	movies: {},
-	// 	actors: {},
-	// 	genres: [],
-	// 	privat: false
-	// }; 
+// const personalMovieDB = {
+// 	count: numderOfFilms,
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false
+// }; 
 
 
-	// const a = prompt('Один из последних просмотренніх фильмов?');
-	// const b = prompt('На сколько вы их оцените?');
+// const a = prompt('Один из последних просмотренніх фильмов?');
+// const b = prompt('На сколько вы их оцените?');
 
-	// const d = prompt('Один из последних просмотренніх фильмов?');
-	// const c = prompt('На сколько вы их оцените?');
-	
-	// personalMovieDB.movies[a] = b; 
-	// personalMovieDB.movies[d] = c; 
+// const d = prompt('Один из последних просмотренніх фильмов?');
+// const c = prompt('На сколько вы их оцените?');
 
-	// console.log(personalMovieDB);
+// personalMovieDB.movies[a] = b; 
+// personalMovieDB.movies[d] = c; 
 
-	//Условия IF & ELSE
-	const testing = 1;
+// console.log(personalMovieDB);
 
-	if (testing) {
-		console.log('Ok');
-	} else {
-		console.log('not ok');
-	}
+//Условия IF & ELSE
+const testing = 1;
 
-	// много уровневая проверка
+if (testing) {
+	console.log('Ok');
+} else {
+	console.log('not ok');
+}
 
-	const numbers = 50;
+// много уровневая проверка
 
-	if (numbers < 49) {
-		console.log('first');
-	} else if ( numbers > 100 ) {
-		console.log('second');
-	} else {
-		console.log('three');
-	}
-	// сравнение тернарными операторами
+const numbers = 50;
 
-	const num = 50;
+if (numbers < 49) {
+	console.log('first');
+} else if (numbers > 100) {
+	console.log('second');
+} else {
+	console.log('three');
+}
+// сравнение тернарными операторами
 
-	(num == 50) ? console.log('Okc') : console.log("Not Ok");
+const num = 50;
 
-	//многоуровневая проверка SWITCH
+(num == 50) ? console.log('Okc'): console.log("Not Ok");
 
-	const nures = '50';
+//многоуровневая проверка SWITCH
 
-	switch (nures) {
-		case '49':
-			console.log('not');
-			break;
-		case '150':
-			console.log('not');
-			break;
-		case '50':
-			console.log('yes');
-			break;
-		default:
-			console.log('не в этот раз');
-			break;
-	}
+const nures = '50';
 
-	// ЦЫКЛЫ
+switch (nures) {
+	case '49':
+		console.log('not');
+		break;
+	case '150':
+		console.log('not');
+		break;
+	case '50':
+		console.log('yes');
+		break;
+	default:
+		console.log('не в этот раз');
+		break;
+}
+
+// ЦЫКЛЫ
 // while
-	let chukl = 50;
+let chukl = 50;
 
-	while (chukl <= 55) {
-		console.log(chukl);
-		chukl++;
-	}
+while (chukl <= 55) {
+	console.log(chukl);
+	chukl++;
+}
 //do
 
-	let chukl1 = 50;
+let chukl1 = 50;
 
-	do {
-		console.log(chukl1);
-		chukl1++;
-	}
-	while (chukl1 <= 55);
+do {
+	console.log(chukl1);
+	chukl1++;
+}
+while (chukl1 <= 55);
 //for 
 let nurt = 50;
 for (let i = 1; i < 8; i++) {
@@ -171,7 +171,7 @@ for (let i = 1; i < 8; i++) {
 }
 
 for (let i = 1; i < 10; i++) {
-	if (i===6) {
+	if (i === 6) {
 		//break; - заканчивает цикл когда выполняеться условие
 		continue; // выполняет цыкл до условия и после (перепрыгивает)
 	}
@@ -233,9 +233,9 @@ sendFirstMassege('Hello');
 let numds = 10;
 
 function sendFirstsMassege(text) {
-	
+
 	console.log(text);
-     numds = 20;
+	numds = 20;
 }
 sendFirstsMassege('Hello');
 
@@ -270,7 +270,7 @@ let cdf = myString.toUpperCase();
 console.log(cdf.toLowerCase()); // метод для маленьких букв
 
 const frut = "Sory this is my frut";
-console.log(frut.indexOf('my'));  // показывает под каким номером начинаеться этот кусо текста
+console.log(frut.indexOf('my')); // показывает под каким номером начинаеться этот кусо текста
 
 
 const logg = 'Hello world';
@@ -280,7 +280,7 @@ const numderrr = 12.2;
 console.log(Math.round(numderrr)); // Math применяеться к числам (перевод математика) .round - округление до ближайшего целого числа 
 
 
-const tests =  "19.9px";
+const tests = "19.9px";
 console.log(parseInt(tests)); // переводит строку в целое число (вообщше метод для превращения числа я другую систему исчисления но можно спользовать и  так)
 
 console.log(parseFloat(tests)); // работает как и предідущий но возвращает значение уже с точкой
@@ -308,7 +308,7 @@ console.log(parseFloat(tests)); // работает как и предідущи
 // 	for (let i = 0; i < 2; i++) {
 // 			const a = prompt('Один из последних просмотренніх фильмов?');
 // 			const b = prompt('На сколько вы их оцените?');
-		
+
 // 			if (a != null && b != null && a != '' && b != '' && a.length < 50) {
 // 				personalMovieDB.movies[a] = b; 
 // 				console.log('Done');
@@ -352,6 +352,7 @@ function learnJs(lang, callback) {
 	console.log(`Я учу;${lang}`);
 	callback();
 }
+
 function done() {
 	console.log('Я прошел этот урок');
 }
@@ -364,7 +365,7 @@ const options = {
 	height: '1024',
 	colors: {
 		border: "black",
-		bg:'red',
+		bg: 'red',
 	}
 }
 
@@ -381,14 +382,13 @@ console.log(options);
 //вариант где обект внутри перебираеться
 for (let key in options) {
 	if (typeof (options[key]) === "object") {
-		for ( let i in options[key]) {
+		for (let i in options[key]) {
 			console.log(`Свойство ${i} значение ${options[key][i]}`);
 		}
-	}
-	else {
+	} else {
 		console.log(`свойства ${key} значение ${options[key]}`);
 	}
-	
+
 }
 
 //проверка массива на количество елементов keys
@@ -406,42 +406,42 @@ const newObject = {
 	secondName: 'izotov',
 	age: 36,
 	long: 198,
-	makeTest: function (){
+	makeTest: function () {
 		console.log('Test');
 	},
 };
 
- //РАБОТА С МАССИВАМИ
+//РАБОТА С МАССИВАМИ
 
- const arrow = [1, 2, 3, 4, 5, 6, 7, 8, 10];
+const arrow = [1, 2, 3, 4, 5, 6, 7, 8, 10];
 
- console.log(arrow);
+console.log(arrow);
 
- arrow.pop(10); //удаление последнего елемента массива
- console.log(arrow);
+arrow.pop(10); //удаление последнего елемента массива
+console.log(arrow);
 
- arrow.push(11); //добавляет елемент в конец
- console.log(arrow);
+arrow.push(11); //добавляет елемент в конец
+console.log(arrow);
 
 
- //перебор массива с помощью обычного цикла
- for (let i = 0; i < arrow.length; i++) {
-	 const element = arrow[i];
-	 console.log(element);
- }
+//перебор массива с помощью обычного цикла
+for (let i = 0; i < arrow.length; i++) {
+	const element = arrow[i];
+	console.log(element);
+}
 
- //переюор массива с помощью специального метода forEach()
- arrow.forEach(function(item, i, arrow){
+//переюор массива с помощью специального метода forEach()
+arrow.forEach(function (item, i, arrow) {
 	console.log(`${i}: ${item} внутри массива ${arrow}`);
- });
+});
 
 
- //метод split для перебора большой строки и вередачу данных  в массив
+//метод split для перебора большой строки и вередачу данных  в массив
 //  const newArrow = prompt('','');
 //  const products = newArrow.split(',');
 //  console.log(products);
 
- //метод join для того чтоб переделать массив в большую строку
+//метод join для того чтоб переделать массив в большую строку
 
 //  console.log(products.join('; '));
 
@@ -451,65 +451,168 @@ const newObject = {
 
 
 const personalMovieDB = {
-			count: 0,
-			movies: {},
-			ganrl: {},
-			privat: false,
-			start: function () {
-				personalMovieDB.count = +prompt('Как много фильмов вы посмотрели?, "');
-				while (personalMovieDB.count  == '' || personalMovieDB.count  == null || isNaN(personalMovieDB.count )) {
-					personalMovieDB.count  = +prompt('Как много фильмов вы посмотрели?, "');
-				}
-			},
-			rememberMyfilms: function() {
-				for (let i = 0; i < 2; i++) {
-						const a = prompt('Один из последних просмотренніх фильмов?');
-						const b = prompt('На сколько вы их оцените?');
-					
-						if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-							personalMovieDB.movies[a] = b; 
-							console.log('Done');
-						} else {
-							console.log('error');
-							i--;
-						}
-					}
-			},
-			detectPersonalLevel: function() {
-				if (personalMovieDB.count < 10) {
-						console.log('мало фильмов');
-					 } else if ( personalMovieDB.count > 10 && personalMovieDB.count < 30 ) {
-						console.log('Нормально');
-					} else {
-						console.log('бездельник. только и смотриш фильмы');
-				 }
-			},
-			showMybm: function (hidden){
-				if (!hidden) {
-					console.log(personalMovieDB);
-				}
-			},
-			toggleVisibleMyDB: function () {
-				if (personalMovieDB.privat) {
-					personalMovieDB.privat == false;
-				} else {
-					personalMovieDB.privat == true;
-				}
-			},
-			writeyourGaners: function() {
-				for (let i = 1; i <= 3; i++){
-					let genre = prompt (`Ваш любтимый жанр под номером ${i}`);
-					if (genre === '' || genre === null) {
-						console.log('некоректные данные или их нет');
-						i--;
-					}
-					else {
-						personalMovieDB.ganrl[i -1] = genre;
-					}
-				}
-				persnalMovieDB.ganrl.forEach(function (item, i,) {
-					console.log(`Любимый жанр ${i} - это ${item}.`);
-				});
+	count: 0,
+	movies: {},
+	ganrl: {},
+	privat: false,
+	start: function () {
+		personalMovieDB.count = +prompt('Как много фильмов вы посмотрели?, "');
+		while (personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
+			personalMovieDB.count = +prompt('Как много фильмов вы посмотрели?, "');
+		}
+	},
+	rememberMyfilms: function () {
+		for (let i = 0; i < 2; i++) {
+			const a = prompt('Один из последних просмотренніх фильмов?');
+			const b = prompt('На сколько вы их оцените?');
+
+			if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+				personalMovieDB.movies[a] = b;
+				console.log('Done');
+			} else {
+				console.log('error');
+				i--;
 			}
-	 }; 
+		}
+	},
+	detectPersonalLevel: function () {
+		if (personalMovieDB.count < 10) {
+			console.log('мало фильмов');
+		} else if (personalMovieDB.count > 10 && personalMovieDB.count < 30) {
+			console.log('Нормально');
+		} else {
+			console.log('бездельник. только и смотриш фильмы');
+		}
+	},
+	showMybm: function (hidden) {
+		if (!hidden) {
+			console.log(personalMovieDB);
+		}
+	},
+	toggleVisibleMyDB: function () {
+		if (personalMovieDB.privat) {
+			personalMovieDB.privat == false;
+		} else {
+			personalMovieDB.privat == true;
+		}
+	},
+	writeyourGaners: function () {
+		for (let i = 1; i <= 3; i++) {
+			let genre = prompt(`Ваш любтимый жанр под номером ${i}`);
+			if (genre === '' || genre === null) {
+				console.log('некоректные данные или их нет');
+				i--;
+			} else {
+				personalMovieDB.ganrl[i - 1] = genre;
+			}
+		}
+		persnalMovieDB.ganrl.forEach(function (item, i, ) {
+			console.log(`Любимый жанр ${i} - это ${item}.`);
+		});
+	}
+};
+
+// переопределение типов данных
+
+//в строку (класический)
+console.log(typeof (String(55)));
+//конкатинация в строку
+console.log(typeof (5 + " "));
+
+//в число
+//1)
+console.log(typeof (Number('5')));
+//2)
+console.log(typeof (+'5'));
+//3)
+console.log(typeof (parseInt("15px", 10)));
+
+//в boolean
+let switcher = null;
+
+if (switcher) {
+	console.log("Working....");
+}
+switcher = 1;
+if (switcher) {
+	console.log("Working....");
+}
+//2) 
+console.log(typeof (Boolean('4')));
+
+//3) 
+console.log(typeof (!!"4444"));
+
+
+// Работа с DOM
+
+const box = document.getElementById('box')
+const btns = document.querySelectorAll('.btn')
+const round = document.getElementById('round')
+const btnNew = document.querySelectorAll('.new-btn')
+const wrapper = document.querySelector('.wrap')
+//так можно получить все свойства обекта
+console.dir(box);
+console.log(btns);
+// изминения только одного свойства елементаб одного елемента по Id
+box.style.backgroundColor = 'red';
+
+
+// изминения одного свойства у всех елементов с одним классом
+for (let index = 0; index < btns.length; index++) {
+	btns[index].style.borderRadius = '50%'
+};
+// еще одинметод для изминения одного свойства у всех елементов с одним классом
+btnNew.forEach(item => {
+	item.style.backgroundColor = 'blue';
+});
+
+// изменения нескольких свойст у одного елемента
+
+round.style.cssText = 'width: 100px; background-color: green; height: 50px'
+
+//создание елемента (только в скрипте)
+const div = document.createElement('div');
+
+//создание тестового модуля (только в скрипте)
+const text = document.createTextNode('Hello wold');
+
+// добавденния класса к блоку который1 мы создали
+div.classList.add('black');
+
+//добавление елемента на страницу (метод для для добавления в конец)
+
+document.body.append(div);
+
+
+//добавление елемента на страницу (метод для добавления в обертку, в конец)
+
+wrapper.append(div);
+
+//добавление елемента на страницу (метод для добавления в обертку, в начало)
+
+wrapper.prepend(div);
+
+//аналогично через другие методы
+
+btns[0].before(div);
+btns[0].after(div);
+
+//удаление едемента
+btns[2].remove()
+
+//замена елемента
+btns[3].replaceWith(btnNew[0])
+
+//метод для вставляния тегов или текста
+
+div.innerHTML = "<h6>Hello</h6>"
+
+//метод для вставление кусков HTML в определенніе места (beforebegin-этот аргумент определяет место куда ставим)
+
+div.insertAdjacentHTML('beforebegin', '<h5>Hello</h5>')
+
+
+
+
 
