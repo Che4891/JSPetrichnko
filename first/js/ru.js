@@ -135,3 +135,34 @@ const div = new ColorRectang(20, 30, 'Hello World', 'red')
 
 div.showMyProps();
 console.log(div.calcArea());
+
+// rest оператор - собирает аргументы в масив
+
+function restTesr(a, b, ...rest) {
+  console.log(a, b, rest);
+}
+restTesr('basic', 'rest', 'operator', 'usage');
+
+// аргумент по умолчанию - значение которое подставиться если нет аргумента
+
+function calcDouble(number, basis = 2) {
+  console.log(number * basis);
+}
+calcDouble(2);
+
+
+//JSON разбераемся с методом
+
+// зашифромуем данные для передачи на сервер
+
+const person = {
+  name: 'Alex',
+  tel: '+380677777777'
+};
+const get = JSON.stringify(person)
+console.log(get);
+
+//розшифровуем даннаые с сервера
+
+const post = JSON.parse(get)
+console.log(post);
